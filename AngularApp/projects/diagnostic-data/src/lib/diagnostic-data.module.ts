@@ -83,7 +83,7 @@ import { AppDependenciesComponent } from './components/app-dependencies/app-depe
 import { HighchartsChartModule } from 'highcharts-angular';
 import { HighchartsGraphComponent } from './components/highcharts-graph/highcharts-graph.component';
 import { FabNavModule } from './components/fab-nav/fab-nav.module';
-import { FabPanelModule, FabIconModule, FabChoiceGroupModule, FabSearchBoxModule, FabDropdownModule, FabDetailsListModule, FabTextFieldModule, FabMessageBarModule, FabButtonModule, FabTooltipModule, FabSpinnerModule, FabCalloutModule, FabCheckboxModule, FabPivotModule } from '@angular-react/fabric';
+import { FabPanelModule, FabIconModule, FabChoiceGroupModule, FabSearchBoxModule, FabDropdownModule, FabDetailsListModule, FabTextFieldModule, FabMessageBarModule, FabButtonModule, FabTooltipModule, FabSpinnerModule, FabCalloutModule, FabCheckboxModule, FabPivotModule, FabLinkModule } from '@angular-react/fabric';
 import { SummaryCardsComponent } from './components/summary-cards/summary-cards.component';
 import { InsightsV4Component } from './components/insights-v4/insights-v4.component';
 import { CardSelectionV4Component } from './components/card-selection-v4/card-selection-v4.component';
@@ -111,6 +111,8 @@ import { SectionsComponent } from './components/sections/sections.component';
 import { CollapsibleListComponent } from './components/collapsible-list/collapsible-list.component';
 import { CollapsibleListFabricComponent } from './components/collapsible-list/collapsible-list-fabric/collapsible-list-fabric.component';
 import { CollapsibleListItemComponent } from './components/collapsible-list/collapsible-list-item.component';
+import { FabCardComponent } from './components/fab-card/fab-card.component';
+import { HighChartsHoverService } from './services/highcharts-hover.service';
 
 @NgModule({
   imports: [
@@ -137,6 +139,7 @@ import { CollapsibleListItemComponent } from './components/collapsible-list/coll
     FabCalloutModule,
     FabCheckboxModule,
     FabPivotModule,
+    FabLinkModule
   ],
   providers: [
     ClipboardService
@@ -180,7 +183,8 @@ import { CollapsibleListItemComponent } from './components/collapsible-list/coll
     SectionsComponent,
     CollapsibleListComponent,
     CollapsibleListFabricComponent,
-    CollapsibleListItemComponent
+    CollapsibleListItemComponent,
+    FabCardComponent
   ],
   entryComponents: [DetectorListAnalysisComponent],
   exports: [
@@ -203,7 +207,8 @@ import { CollapsibleListItemComponent } from './components/collapsible-list/coll
     FabTabComponent,
     CollapsibleListComponent,
     CollapsibleListFabricComponent,
-    CollapsibleListItemComponent
+    CollapsibleListItemComponent,
+    FabTabComponent
   ],
 })
 export class DiagnosticDataModule {
@@ -226,7 +231,8 @@ export class DiagnosticDataModule {
         FeatureNavigationService,
         AppInsightsQueryService,
         ParseResourceService,
-        FabNavModule
+        FabNavModule,
+        HighChartsHoverService
       ]
     };
   }
