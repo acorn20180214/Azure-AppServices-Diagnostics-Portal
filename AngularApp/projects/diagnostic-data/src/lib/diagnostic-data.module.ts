@@ -113,6 +113,7 @@ import { CollapsibleListFabricComponent } from './components/collapsible-list/co
 import { CollapsibleListItemComponent } from './components/collapsible-list/collapsible-list-item.component';
 import { FabCardComponent } from './components/fab-card/fab-card.component';
 import { HighChartsHoverService } from './services/highcharts-hover.service';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -124,6 +125,7 @@ import { HighChartsHoverService } from './services/highcharts-hover.service';
     MonacoEditorModule.forRoot(),
     CustomMaterialModule,
     HighchartsChartModule,
+    RouterModule,
     FabPanelModule,
     FabIconModule,
     FabChoiceGroupModule,
