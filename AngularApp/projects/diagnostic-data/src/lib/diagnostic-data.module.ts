@@ -115,6 +115,7 @@ import { FabCardComponent } from './components/fab-card/fab-card.component';
 import { HighChartsHoverService } from './services/highcharts-hover.service';
 import { RouterModule } from '@angular/router';
 import { FabDataTableComponent } from './components/fab-data-table/fab-data-table.component';
+import { SolutionPanelComponent } from './components/solution-panel/solution-panel.component';
 
 @NgModule({
   imports: [
@@ -188,7 +189,8 @@ import { FabDataTableComponent } from './components/fab-data-table/fab-data-tabl
     CollapsibleListFabricComponent,
     CollapsibleListItemComponent,
     FabCardComponent,
-    FabDataTableComponent
+    FabDataTableComponent,
+    SolutionPanelComponent
   ],
   entryComponents: [DetectorListAnalysisComponent],
   exports: [
