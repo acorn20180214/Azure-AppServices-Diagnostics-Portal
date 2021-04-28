@@ -219,7 +219,8 @@ import { DetectorTimePickerComponent } from './components/detector-time-picker/d
     CollapsibleListFabricComponent,
     CollapsibleListItemComponent,
     FabTabComponent,
-    DetectorTimePickerComponent
+    DetectorTimePickerComponent,
+    FabDataTableComponent
   ],
 })
 export class DiagnosticDataModule {
