@@ -117,6 +117,7 @@ import { RouterModule } from '@angular/router';
 import { FabDataTableComponent } from './components/fab-data-table/fab-data-table.component';
 import { SolutionsPanelComponent } from './components/solutions-panel/solutions-panel.component';
 import { DetectorTimePickerComponent } from './components/detector-time-picker/detector-time-picker.component';
+import { FabricFeedbackComponent } from './components/fabric-feedback/fabric-feedback.component';
 
 @NgModule({
   imports: [
@@ -194,7 +195,8 @@ import { DetectorTimePickerComponent } from './components/detector-time-picker/d
     FabCardComponent,
     FabDataTableComponent,
     SolutionsPanelComponent,
-    DetectorTimePickerComponent
+    DetectorTimePickerComponent,
+    FabricFeedbackComponent
   ],
   entryComponents: [DetectorListAnalysisComponent],
   exports: [
@@ -220,7 +222,8 @@ import { DetectorTimePickerComponent } from './components/detector-time-picker/d
     CollapsibleListItemComponent,
     FabTabComponent,
     DetectorTimePickerComponent,
-    FabDataTableComponent
+    FabDataTableComponent,
+    FabricFeedbackComponent
   ],
 })
 export class DiagnosticDataModule {
